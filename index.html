@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Abuazzoum</title>
+<meta name="description" content="Mohamed Abuazzoum — nine roles in three countries across business, data, tech and coordination. MSc BI & Process Management, HWR Berlin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f4f1ea;--ink:#1d1c1a;--muted:#6b675f;--line:#d9d3c6;--accent:#b8431f;--card:#fbfaf6;--soft:#efe7da}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#171614;--ink:#ece8df;--muted:#9a958b;--line:#34312c;--accent:#e0754f;--card:#1f1e1b;--soft:#2a2420}}
+:root[data-theme="dark"]{--paper:#171614;--ink:#ece8df;--muted:#9a958b;--line:#34312c;--accent:#e0754f;--card:#1f1e1b;--soft:#2a2420}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1.5px}
+a:hover{color:var(--accent)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:15px}
+nav .me{font-family:"Fraunces",serif;font-weight:600;font-size:18px;text-decoration:none}
+nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0}
+nav ul a{text-decoration:none;color:var(--muted)}
+nav ul a:hover{color:var(--ink)}
+#theme{background:none;border:1px solid var(--line);color:var(--muted);border-radius:20px;padding:3px 11px;font:inherit;font-size:13px;cursor:pointer}
+
+.intro{padding:56px 0 48px;display:grid;grid-template-columns:1fr 250px;gap:48px;align-items:center}
+.intro > *{min-width:0}
+.portrait{margin:0;position:relative}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:3px;display:block;filter:saturate(.9)}
+.portrait figcaption{font-size:12.5px;color:var(--muted);margin-top:8px}
+
+/* samples */
+.samples{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.sample{margin:0;background:var(--card);border:1px solid var(--line);border-radius:3px;overflow:hidden;display:flex;flex-direction:column}
+.sample.wide{grid-column:span 4}.sample.half{grid-column:span 3}.sample.narrow{grid-column:span 2}
+.sample .pic{background:#fff;display:flex;align-items:center;justify-content:center;padding:14px;flex:1;min-height:220px;height:380px;overflow:hidden;cursor:zoom-in}
+.sample .pic.photo img{object-position:center 25%}
+.sample .pic.photo{padding:0;background:var(--soft)}
+.sample img{max-width:100%;max-height:340px;display:block}
+.sample .pic.photo img{width:100%;height:100%;max-height:none;object-fit:cover}
+.sample figcaption{padding:14px 18px 18px;border-top:1px solid var(--line)}
+.sample h3{font-family:"Fraunces",serif;font-weight:600;font-size:18px;margin:0 0 4px}
+.sample p{margin:0;font-size:14.5px;color:var(--muted)}
+/* case study */
+.case{display:grid;grid-template-columns:1fr 1.15fr;gap:44px;align-items:start}
+.case .lead{font-size:18.5px;margin:0 0 18px}
+.case dl{margin:22px 0 0;display:grid;grid-template-columns:110px 1fr;gap:10px 18px;font-size:15.5px}
+.case dt{color:var(--muted);font-size:12.5px;padding-top:3px;text-transform:uppercase;letter-spacing:.05em}
+.case dd{margin:0}
+.nums{display:flex;gap:28px;margin:24px 0 4px;flex-wrap:wrap}
+.nums div b{display:block;font-family:"Fraunces",serif;font-weight:400;font-size:34px;color:var(--accent);line-height:1}
+.nums div span{font-size:13px;color:var(--muted)}
+.pages{position:relative;display:grid;gap:16px}
+.pages figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:3px;overflow:hidden;cursor:zoom-in;box-shadow:0 1px 0 var(--line)}
+.pages img{width:100%;display:block}
+.pages .p1{transform:rotate(-1deg)}
+.pages .p2{transform:rotate(.8deg);margin:0 0 0 28px}
+.pages figcaption{font-size:12.5px;color:#6b675f;padding:8px 12px;border-top:1px solid #e6e1d6;background:#fbfaf6}
+.conf{font-size:13.5px;color:var(--muted);margin-top:18px;padding:10px 14px;border:1px dashed var(--line);border-radius:3px}
+
+/* linkedin */
+.li{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.li-card{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.li-top{height:70px;background:linear-gradient(120deg,#1d1c1a,#3a2a22 60%,var(--accent))}
+.li-body{padding:0 22px 22px;margin-top:-34px}
+.li-body img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center 20%;border:3px solid var(--card);display:block}
+.li-body h3{font-family:"Fraunces",serif;font-weight:600;font-size:20px;margin:10px 0 2px}
+.li-body .hl{font-size:14px;color:var(--muted);margin:0 0 12px}
+.li-stats{display:flex;gap:22px;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.li-stats b{color:var(--ink);font-weight:500}
+.btn{display:inline-block;margin-top:18px;padding:10px 18px;background:var(--ink);color:var(--paper);text-decoration:none;border-radius:3px;font-size:15px}
+.btn:hover{color:var(--paper);background:var(--accent)}
+.li ul{margin:10px 0 0;padding-left:18px;font-size:15.5px}
+.li li{margin:5px 0}
+/* field gallery */
+.field{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px}
+.field figure{margin:0;position:relative;overflow:hidden;border-radius:3px;cursor:zoom-in;background:var(--soft)}
+.field figure img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.field figure:hover img{transform:scale(1.03)}
+.field .tall{grid-row:span 2}
+.field .wide2{grid-column:span 2}
+.field figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;color:#fff;font-size:13.5px;line-height:1.4;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+.field figcaption b{display:block;font-family:"Fraunces",serif;font-weight:600;font-size:16px}
+/* big projects */
+.proj-big{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center;margin-bottom:56px}
+.proj-big.flip .shot{order:2}
+.proj-big .shot{display:block;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(0,0,0,.45);cursor:zoom-in}
+.proj-big .shot img{width:100%;display:block}
+.proj-big h3{font-family:"Fraunces",serif;font-weight:600;font-size:28px;margin:4px 0 10px}
+.kicker{font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+.proj-big p{margin:0 0 12px}
+.proj-big ul{margin:0 0 14px;padding-left:18px;font-size:15.5px}
+.proj-big li{margin:4px 0}
+.proj-big li b{font-weight:500}
+.tags{font-size:12.5px;color:var(--muted)}
+#lb{position:fixed;inset:0;background:rgba(10,10,10,.88);display:none;align-items:center;justify-content:center;padding:24px;z-index:9;cursor:zoom-out}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:100%;background:#fff;border-radius:3px}
+h1{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(36px,5.6vw,60px);line-height:1.07;margin:0 0 24px;letter-spacing:-.5px;max-width:15em}
+h1 em{color:var(--accent)}
+.intro p{max-width:38em;margin:0 0 14px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;margin-top:8px;color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:#3d9a5b;display:inline-block}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats div{padding:22px 18px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font-family:"Fraunces",serif;font-weight:400;font-size:40px;line-height:1;color:var(--accent)}
+.stats span{font-size:14px;color:var(--muted)}
+
+section{padding:60px 0;border-top:1px solid var(--line)}
+.stats + section{border-top:0}
+.label{font-size:12.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+h2{font-family:"Fraunces",serif;font-weight:400;font-size:34px;margin:0 0 30px;line-height:1.2}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:-12px 0 30px}
+.filters button{font:inherit;font-size:14px;background:none;border:1px solid var(--line);color:var(--muted);border-radius:20px;padding:5px 14px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* roles */
+.role{display:grid;grid-template-columns:170px 1fr;gap:28px;padding:26px 0;border-bottom:1px dashed var(--line)}
+.role:last-of-type{border-bottom:0}
+.role[hidden]{display:none}
+.when{font-size:13px;color:var(--muted);padding-top:5px}
+.when .place{display:block;margin-top:4px}
+.role h3{font-family:"Fraunces",serif;font-weight:600;font-size:21px;margin:0}
+.role .org{color:var(--muted);font-size:15.5px;margin:2px 0 10px}
+.role ul{margin:0;padding-left:18px}
+.role li{margin:3px 0;font-size:15.5px}
+.role li b{font-weight:500}
+.take{margin:12px 0 0;font-size:14.5px;color:var(--muted);font-style:italic}
+.chip{display:inline-block;font-size:11.5px;padding:1px 8px;border-radius:10px;background:var(--soft);color:var(--accent);margin-left:8px;vertical-align:3px;font-family:"IBM Plex Mono",monospace;font-style:normal}
+
+/* thread */
+.thread{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.thread div{background:var(--card);border:1px solid var(--line);padding:22px;border-radius:3px}
+.thread h3{font-family:"Fraunces",serif;font-weight:600;font-size:19px;margin:0 0 6px}
+.thread p{margin:0;font-size:15px;color:var(--muted)}
+
+/* edu */
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:20px 40px}
+.edu h3{font-family:"Fraunces",serif;font-weight:600;font-size:19px;margin:0}
+.edu p{margin:2px 0 0;font-size:15px;color:var(--muted)}
+.extras{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.extras h4{margin:0 0 6px;font-size:15px;font-weight:500}
+.extras p{margin:0;font-size:14.5px;color:var(--muted)}
+
+.contact h2{font-size:clamp(28px,4.2vw,42px);max-width:18em}
+.contact a.big{font-family:"Fraunces",serif;font-size:clamp(22px,3vw,28px)}
+footer{padding:36px 0 50px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media (max-width:760px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  nav ul{display:none}
+  .intro{padding:36px 0 32px;grid-template-columns:1fr;gap:28px}
+  .portrait{max-width:200px;order:-1}
+  .samples,.case,.li,.proj-big{grid-template-columns:1fr}
+  .proj-big.flip .shot{order:0}
+  .field{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .field figure{height:220px}
+  .field .tall{grid-row:auto;height:380px;grid-column:span 2}
+  .field .wide2{grid-column:span 2}
+  .pages .p2{margin-left:12px}
+  .case dl{grid-template-columns:1fr;gap:2px}
+  .case dd{margin-bottom:10px}
+  .sample.wide,.sample.half,.sample.narrow{grid-column:auto}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stats div:nth-child(2){border-right:0}
+  .stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .role{grid-template-columns:1fr;gap:6px}
+  .thread,.edu,.extras{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <a class="me" href="#">M. Abuazzoum</a>
+  <ul>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#case">Case study</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#linkedin">LinkedIn</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="theme" type="button" aria-label="Toggle dark mode">dark</button>
+</nav>
+
+<header class="intro">
+  <div>
+  <h1>Nine roles, three countries, and a habit of asking <em>why it works this way.</em></h1>
+  <p>I'm Mohamed, a master's student in Business Intelligence &amp; Process Management at HWR Berlin. In the last two years I've written backend code, tested financial software, sold to high schools, worked in a bank and run trainings for health ministries.</p>
+  <p>That sounds scattered, and honestly it felt that way at the time. But every job taught me how a different kind of organisation actually runs. Now I want to put that to work in BI and process roles.</p>
+  <span class="status mono"><i></i> open to Werkstudent &amp; internship roles · Berlin</span>
+  </div>
+  <figure class="portrait">
+    <img src="img/me.jpg" alt="Portrait of Mohamed Abuazzoum">
+  </figure>
+</header>
+
+<div class="stats">
+  <div><b>9</b><span>roles &amp; internships</span></div>
+  <div><b>3</b><span>countries: Jordan, Spain, Bulgaria</span></div>
+  <div><b>500+</b><span>people trained, pitched to or coordinated</span></div>
+  <div><b>3rd</b><span>of 160 in my bachelor's (GPA 91.9)</span></div>
+</div>
+
+<section id="experience">
+  <div class="label mono">Experience</div>
+  <h2>Where I've worked, and what I actually did there</h2>
+
+  <div class="filters" role="group" aria-label="Filter roles">
+    <button type="button" data-f="all" aria-pressed="true">All</button>
+    <button type="button" data-f="ops">Coordination &amp; research</button>
+    <button type="button" data-f="tech">Tech &amp; data</button>
+    <button type="button" data-f="biz">Business &amp; sales</button>
+  </div>
+
+  <article class="role" data-k="ops">
+    <div class="when mono">05 – 09/2026<span class="place">Amman, Jordan</span></div>
+    <div>
+      <h3>Training Coordinator Intern</h3>
+      <div class="org">EMPHNET · Eastern Mediterranean Public Health Network</div>
+      <ul>
+        <li>Coordinated <b>5+ training programmes</b> for <b>100+ participants</b>: schedules, logistics, the lot</li>
+        <li>Supported research and coordination on primary healthcare reform projects</li>
+        <li>Built the reports and tracking docs that kept deliverables on time</li>
+      </ul>
+      <p class="take">What I learned: most crises in a training week are really a missing row in a spreadsheet.</p>
+    </div>
+  </article>
+
+  <article class="role" data-k="ops">
+    <div class="when mono">11/2025 – 08/2026<span class="place">Amman, Jordan</span></div>
+    <div>
+      <h3>Coordinator &amp; Researcher, Digital Youth Rights Unit</h3>
+      <div class="org">Amman Center for Human Rights Studies</div>
+      <ul>
+        <li>Led the unit's youth digital-rights initiatives, aligned with international human rights standards</li>
+        <li>Did the research and data analysis behind evidence-based advocacy</li>
+        <li>Designed and delivered <b>8 sessions</b> on online safety for <b>200+ young people</b></li>
+        <li>Tracked programme performance with KPIs and adjusted what wasn't working</li>
+      </ul>
+      <p class="take">This is the job where I first used data to argue for a decision instead of just reporting it.</p>
+    </div>
+  </article>
+
+  <article class="role" data-k="biz">
+    <div class="when mono">09 – 10/2025<span class="place">Amman, Jordan</span></div>
+    <div>
+      <h3>Banking Intern</h3>
+      <div class="org">Jordan Kuwait Bank</div>
+      <ul>
+        <li>Rotated through <b>4 departments</b>: retail, corporate, operations, customer service</li>
+        <li>Helped with daily operations covering <b>50+ customer requests</b></li>
+        <li>Mapped how requests moved between teams and noted where they got stuck</li>
+      </ul>
+      <p class="take">A bank is basically a huge set of processes. Seeing them from inside is what pushed me toward process management.</p>
+    </div>
+  </article>
+
+  <article class="role" data-k="biz">
+    <div class="when mono">07 – 10/2025<span class="place">Amman, Jordan</span></div>
+    <div>
+      <h3>Social Media &amp; Communication Intern</h3>
+      <div class="org">Amman Center for Human Rights Studies</div>
+      <ul>
+        <li>Created and published <b>40+ posts</b> across <b>3 platforms</b></li>
+        <li>Read the analytics weekly and changed formats and timing based on what performed</li>
+      </ul>
+      <p class="take">Liked it enough that they kept me on in a bigger role (see above).</p>
+    </div>
+  </article>
+
+  <article class="role" data-k="tech">
+    <div class="when mono">03 – 04/2025<span class="place">Barcelona, Spain</span></div>
+    <div>
+      <h3>QA &amp; Technical Writer Intern <span class="chip">abroad</span></h3>
+      <div class="org">OTCFin · financial software</div>
+      <ul>
+        <li>Ran manual and automated tests on financial software products</li>
+        <li>Checked CI/CD pipelines so releases stayed stable</li>
+        <li>Wrote user guides, API docs and knowledge-base pages in Confluence and Markdown</li>
+      </ul>
+      <p class="take">If you want to find a bug, try writing the user guide for it.</p>
+    </div>
+  </article>
+
+  <article class="role" data-k="tech">
+    <div class="when mono">12/2024 – 03/2025<span class="place">Amman, Jordan</span></div>
+    <div>
+      <h3>Backend Development Intern</h3>
+      <div class="org">Sky Software</div>
+      <ul>
+        <li>Designed <b>3 relational databases</b> and built <b>15+ REST API endpoints</b> across 2 projects</li>
+        <li>Used domain-driven design and handled API security setup (CORS)</li>
+      </ul>
+      <p class="take">Not glamorous, but it's why I'm comfortable writing SQL and talking to developers.</p>
+    </div>
+  </article>
+
+  <article class="role" data-k="biz">
+    <div class="when mono">09 – 11/2024<span class="place">Amman, Jordan</span></div>
+    <div>
+      <h3>Business Development Intern</h3>
+      <div class="org">ShipDip · logistics startup</div>
+      <ul>
+        <li>Researched <b>40+ merchants</b> and turned <b>10</b> into qualified leads for sales</li>
+        <li>Helped plan sales pushes and a marketing approach for the Jordanian market</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="role" data-k="biz">
+    <div class="when mono">07 – 09/2024<span class="place">Amman, Jordan</span></div>
+    <div>
+      <h3>Sales Representative Intern</h3>
+      <div class="org">Paramount Student · education platform</div>
+      <ul>
+        <li>Built partnerships with <b>10+ high schools</b></li>
+        <li>Organised visits and presented to <b>300+ students and staff</b></li>
+      </ul>
+      <p class="take">Teenagers are the toughest audience I've had. Every presentation since has felt easy.</p>
+    </div>
+  </article>
+</section>
+
+<section id="case">
+  <div class="label mono">Featured case study · EMPHNET</div>
+  <h2>From a workshop recording to a briefing leadership could act on</h2>
+  <div class="case">
+    <div>
+      <p class="lead">During my internship at EMPHNET, I was given the recording and transcript of a monthly workshop on Jordan's Family Health Team pilot, a national reform of primary healthcare. The ask: make it usable for the people who weren't in the room.</p>
+      <p>Meeting notes usually just retell what was said. I wanted something a manager could open five minutes before the next review and know exactly what's late, who owns it, and what might go wrong.</p>
+      <div class="nums">
+        <div><b>6</b><span>page executive briefing</span></div>
+        <div><b>8</b><span>actions with owner &amp; deadline</span></div>
+        <div><b>5</b><span>open risks flagged</span></div>
+        <div><b>4</b><span>days, meeting to delivery</span></div>
+      </div>
+      <dl>
+        <dt>What I did</dt><dd>Broke the session into four themes, pulled every decision into an action register with owners and deadlines, and built a key-dates timeline for the next review.</dd>
+        <dt>The insight</dt><dd>One doctor was blocked from her final exam by a software filter. The meeting treated it as one case. I flagged that the cause was a system setting, so other specialists would likely hit the same wall before the deadline.</dd>
+        <dt>Why it matters</dt><dd>That's process thinking in practice: find the root cause, not just the symptom, and make the follow-up trackable.</dd>
+      </dl>
+      <p class="conf">The briefing is internal, so I only show cropped pages here, with names removed. Happy to walk through it in an interview.</p>
+    </div>
+    <div class="pages">
+      <figure class="p1"><img src="img/brief-1.jpg" alt="First page of the executive briefing report"><figcaption>Page 1: summary up front, so leaders get the four key points in one paragraph</figcaption></figure>
+      <figure class="p2"><img src="img/brief-2.jpg" alt="Consolidated action register table with names redacted"><figcaption>The action register: every decision gets an owner and a deadline</figcaption></figure>
+      <figure class="p1"><img src="img/brief-3.jpg" alt="High priority questions section of the briefing"><figcaption>Open questions grouped by theme, to raise before the next review</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="field">
+  <div class="label mono">In the field</div>
+  <h2>Less spreadsheet, more people</h2>
+  <div class="field">
+    <figure class="tall"><img src="img/coe.jpg" alt="Mohamed at the Council of Europe North-South Centre stand" style="object-position:center 30%"><figcaption><b>Council of Europe North-South Centre</b>University on Youth and Development 2026</figcaption></figure>
+    <figure class="wide2"><img src="img/group.jpg" alt="Group photo of participants at the University on Youth and Development"><figcaption><b>UYD 2026 participants</b>A week of workshops with young people from across Europe and the Mediterranean</figcaption></figure>
+    <figure><img src="img/presenting.jpg" alt="Mohamed presenting at a session" style="object-position:center 25%"><figcaption><b>Running a session</b>Standing up and explaining things is a big part of my work</figcaption></figure>
+    <figure><img src="img/uyd.jpg" alt="UYD 2026 retrospective poster: AI, Youth and Peace" style="object-position:center top"><figcaption><b>AI, Youth &amp; Peace</b>Theme: preventing digital harm through responsible AI governance</figcaption></figure>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="label mono">Projects</div>
+  <h2>Things I've built</h2>
+
+  <article class="proj-big">
+    <a class="shot" href="https://github.com/MOHZOOM/outbreak-watch" target="_blank" rel="noopener"><img src="img/outbreak-watch.jpg" alt="Outbreak Watch dashboard showing latest official outbreak reports"></a>
+    <div class="proj-text">
+      <div class="kicker mono">Built alongside my EMPHNET work · 2026</div>
+      <h3>Outbreak Watch</h3>
+      <p>At EMPHNET, keeping up with outbreak news meant checking WHO, ECDC, CDC and others one site at a time. So I built a small site that does it automatically: it collects official reports every 30 minutes, checks every link and date on the real page, sorts reports by disease, country and category, and keeps a searchable archive.</p>
+      <ul>
+        <li><b>9 official sources</b>, including WHO Disease Outbreak News, ECDC, US CDC, UKHSA and WHO AFRO</li>
+        <li>Every link is verified before saving, and duplicates are removed by URL and title</li>
+        <li>AI writes short neutral summaries, using only facts from the source and writing "Unknown" rather than guessing</li>
+        <li>Source-first: every item links back to the original report, and the site never makes up sample news</li>
+      </ul>
+      <div class="tags mono">Python · Flask · SQLite · ScrapeGraphAI · OpenAI · Docker</div>
+      <a class="btn" href="https://github.com/MOHZOOM/outbreak-watch" target="_blank" rel="noopener">See the code on GitHub →</a>
+    </div>
+  </article>
+
+  <article class="proj-big flip">
+    <div class="shot"><img src="img/edumentor.jpg" alt="EduMentor academic advising platform home page"></div>
+    <div class="proj-text">
+      <div class="kicker mono">Graduation project · PSUT</div>
+      <h3>EduMentor</h3>
+      <p>An academic advising platform for students at Princess Sumaya University. Students struggled to reach advisors because of limited office hours and lots of students per advisor, so we designed a system that brings advising, career coaching and learning paths into one place.</p>
+      <ul>
+        <li>Took it through the full SDLC: problem definition, planning, analysis, design, testing</li>
+        <li>Mapped the advising process and requirements before writing any code</li>
+        <li>Built the web app with login, services and student pages, backed by Firebase</li>
+      </ul>
+      <div class="tags mono">Systems analysis · SDLC · requirements · HTML/CSS/JS · Firebase</div>
+    </div>
+  </article>
+
+  <div class="samples">
+    <figure class="sample half">
+      <div class="pic photo"><img src="img/pwc.jpg" alt="PwC ElevateME Mentorship Programme selection card" style="object-fit:contain;background:#fff"></div>
+      <figcaption>
+        <h3>PwC ElevateME</h3>
+        <p>Selected as a mentee for PwC Middle East's mentorship programme, Jan – Mar 2026.</p>
+      </figcaption>
+    </figure>
+    <figure class="sample half">
+      <div class="pic photo"><img src="img/graduation.jpg" alt="Mohamed at his graduation"></div>
+      <figcaption>
+        <h3>Graduation, PSUT</h3>
+        <p>BSc Business IT, finished 3rd of 160. My family took about 400 photos that day; this is the one I'm allowed to share.</p>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="pattern">
+  <div class="label mono">The common thread</div>
+  <h2>What all of this adds up to</h2>
+  <div class="thread">
+    <div><h3>I see the whole process</h3><p>I've stood at different points of how organisations work: building the system, testing it, selling it, and dealing with the customer at the end.</p></div>
+    <div><h3>I work with numbers</h3><p>KPIs, analytics, reports, SQL. I use them to decide what to change next, not just to fill a slide.</p></div>
+    <div><h3>I can talk to anyone</h3><p>Developers, bankers, NGO staff, health officials, sixteen-year-olds. In Arabic and fluent English (C2).</p></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="label mono">Education &amp; extras</div>
+  <h2>Where I studied</h2>
+  <div class="edu">
+    <div><h3>MSc Business Intelligence &amp; Process Management</h3><p>HWR Berlin · 2026 – now</p></div>
+    <div><h3>BSc Business Information Technology</h3><p>PSUT, Amman · 2022 – 2026 · GPA 91.9, 3rd of 160, Honor List</p></div>
+    <div><h3>Erasmus+ semester, International Business</h3><p>University of Economics, Varna · 2025</p></div>
+    <div><h3>Outstanding Student Award</h3><p>PSUT · 2024</p></div>
+  </div>
+  <div class="extras">
+    <div><h4>Certifications</h4><p>PwC Data-Driven Decision Making · JOSA Digital Security · Zain Future Leaders (LOYAC)</p></div>
+    <div><h4>Programmes</h4><p>Falling Walls Lab Jordan · Council of Europe HEY alumnus · founder of Amaan, a digital-safety initiative for students</p></div>
+    <div><h4>Student life</h4><p>Vice Chair, Business Technology Club · Events &amp; PR, DART Entrepreneurship Society</p></div>
+  </div>
+</section>
+
+<section id="linkedin">
+  <div class="label mono">On LinkedIn</div>
+  <div class="li">
+    <div>
+      <h2>Where I share what I'm learning</h2>
+      <p>I post about digital rights, youth participation and what I'm picking up in my master's. It's also the easiest place to see my full history and recommendations.</p>
+      <ul>
+        <li>Recent post: representing young people at the Council of Europe UYD 2026</li>
+        <li>Sessions and trainings from my work at ACHRS and EMPHNET</li>
+        <li>Notes from studying BI &amp; process management in Berlin</li>
+      </ul>
+      <a class="btn" href="https://www.linkedin.com/in/mohamed-abuazzoum/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
+    </div>
+    <a class="li-card" href="https://www.linkedin.com/in/mohamed-abuazzoum/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+      <div class="li-top"></div>
+      <div class="li-body">
+        <img src="img/me.jpg" alt="">
+        <h3>Mohamed Abuazzoum</h3>
+        <p class="hl">MSc Business Intelligence &amp; Process Management @ HWR Berlin · Process &amp; Data Analysis · English C2 · Arabic</p>
+        <div class="li-stats"><span><b>950+</b> followers</span><span><b>500+</b> connections</span><span>Berlin</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="label mono">Get in touch</div>
+  <h2>Looking for a Werkstudent or internship role in BI or process management in Berlin.</h2>
+  <p>If your team has data nobody uses or a process everyone complains about, I'd like to hear about it.</p>
+  <p><a class="big" href="mailto:abuazzoum@gmail.com">abuazzoum@gmail.com</a></p>
+  <p><a href="https://www.linkedin.com/in/mohamed-abuazzoum/">LinkedIn</a></p>
+</section>
+
+<footer>
+  <span>© 2026 Mohamed Abuazzoum</span>
+  <span>Berlin</span>
+</footer>
+
+</div>
+<div id="lb" role="dialog" aria-label="Enlarged image"><img alt=""></div>
+<script>
+(function(){
+  var b=document.getElementById('theme'),r=document.documentElement;
+  function cur(){return r.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}
+  function label(){b.textContent=cur()==='dark'?'light':'dark';}
+  try{var s=localStorage.getItem('theme');if(s)r.dataset.theme=s;}catch(e){}
+  label();
+  b.onclick=function(){r.dataset.theme=cur()==='dark'?'light':'dark';try{localStorage.setItem('theme',r.dataset.theme);}catch(e){}label();};
+
+  var lb=document.getElementById('lb'),li=lb.querySelector('img');
+  document.querySelectorAll('.sample .pic img, .pages figure img, .field figure img, .proj-big div.shot img').forEach(function(im){im.parentNode.onclick=function(){li.src=im.src;li.alt=im.alt;lb.classList.add('on');};});
+  lb.onclick=function(){lb.classList.remove('on');};
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on');});
+
+  var btns=document.querySelectorAll('.filters button'),roles=document.querySelectorAll('.role');
+  btns.forEach(function(x){x.onclick=function(){
+    var f=x.dataset.f;
+    btns.forEach(function(y){y.setAttribute('aria-pressed',y===x);});
+    roles.forEach(function(r){r.hidden=!(f==='all'||r.dataset.k===f);});
+  };});
+})();
+</script>
+</body>
+</html>
